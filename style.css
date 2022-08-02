@@ -1,5 +1,5 @@
 body {
-  background-image: url(gambar/image.jpg);
+  background-image: url(gambar/4f39e75a5133c1e139135c85ff946965.jpg);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -10,15 +10,17 @@ legend {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 fieldset {
-  background-color: bisque;
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 5px double black;
-  margin-top: 100px;
+  box-shadow: 0px 0px 95px -30px rgba(194, 38, 38, 0.3);
+  padding: 20px 0;
+  border-radius: 28px;
+  border-color: rgba(171, 116, 185, 255);
+  margin-top: 80px;
   width: 50%;
 }
-
 form {
   display: flex;
   justify-content: center;
@@ -39,23 +41,25 @@ fieldset input {
 }
 
 #submit {
+  margin-top: 1.5rem;
   margin-left: 25%;
   justify-content: center;
   border-radius: 10px;
-  border: none;
-  background-color: blue;
+  border: 10px black;
+  background-image: url(gambar/4f39e75a5133c1e139135c85ff946965.jpg);
   color: aliceblue;
   width: 250px;
   height: 2.2rem;
   font-size: medium;
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   align-items: center;
+  margin-bottom: 1rem;
 }
 #submit:hover {
   justify-content: center;
   border-radius: 10px;
-  border: none;
-  background-color: blue;
+  border: 10px black;
   color: black;
   width: 250px;
   height: 2.2rem;
@@ -65,23 +69,24 @@ fieldset input {
 }
 
 .handle {
-  margin-left: 40.5%;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
-  background-color: blue;
+  background-image: url(gambar/4f39e75a5133c1e139135c85ff946965.jpg);
   color: aliceblue;
   width: 100px;
   height: 2.2rem;
   font-size: medium;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 40.5%;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 .handle:hover {
   text-align: center;
-  border-radius: 5px;
-  border: none;
-  background-color: blue;
+  border-radius: 10px;
+  border: 10px black;
   color: black;
   width: 100px;
   height: 2.2rem;
@@ -90,6 +95,7 @@ fieldset input {
 }
 
 #hasil {
+  margin-top: -0.5rem;
   margin-left: 3rem;
   justify-content: center;
   text-align: center;

@@ -23,7 +23,7 @@ submit.addEventListener("click", function (event) {
   }
 
   if (height_status && weight_status) {
-    const BMI = (weight / ((height * height) / 10000)).toFixed(2);
+    const BMI = (weight / ((height * height) / 10000)).toFixed(1);
 
     if (BMI <= 18.5) {
       hasil.innerHTML = `Your BMI is ${BMI} which means you are Underweight`;

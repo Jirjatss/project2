@@ -3,7 +3,6 @@ let submit = document.getElementById("submit");
 let hasil = document.getElementById("hasil");
 let form = document.getElementById("form");
 let handles = document.getElementsByClassName("handle");
-let submitButton = document.getElementsByClassName("submit-button");
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
@@ -24,7 +23,7 @@ submit.addEventListener("click", function (event) {
   }
 
   if (height_status && weight_status) {
-    const BMI = weight / (height / 100);
+    const BMI = (weight / ((height * height) / 10000)).toFixed(2);
 
     if (BMI <= 18.5) {
       hasil.innerHTML = `Your BMI is ${BMI} which means you are Underweight`;
@@ -36,7 +35,9 @@ submit.addEventListener("click", function (event) {
       hasil.innerHTML = `Your BMI is ${BMI} which means you are Obesity`;
     }
   } else {
-    hasil.innerHTML = "Masukkan data yang valid";
+    hasil.style.color = "red";
+    hasil.innerHTML = "Enter valid data";
+    submit.classList.add("hide");
   }
 
   showAlert();
@@ -58,3 +59,5 @@ function handler() {
 for (let i = 0; i < handles.length; i++) {
   handles[i].addEventListener("click", handler);
 }
+
+console.log(height);

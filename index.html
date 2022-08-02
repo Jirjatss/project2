@@ -14,16 +14,16 @@
           <fieldset>
             <legend><b>Check Your BMI</b></legend>
             <p>Enter your weight and height below to check your BMI result</p>
-            <div id="weight">
+            <div>
               <label>Put your weight in here (KG)</label><br />
-              <input type="number" name="weight" placeholder="60" /><br /><span id="height-error"></span><br />
+              <input id="weight" type="number" name="weight" placeholder="60" value="" /><br />
             </div>
-            <div id="height">
+            <div>
               <label>Put your height in here (CM)</label><br />
-              <input type="number" name="height" placeholder="167" /><br /><span id="weight-error"></span><br /><br />
+              <input id="height" type="number" name="height" placeholder="167" /><br />
             </div>
-            <div id="submit">
-              <input type="submit" value="Calculate BMI" />
+            <div id="input">
+              <input id="submit" type="submit" value="Calculate BMI" />
               <div>
                 <p id="hasil"></p>
               </div>

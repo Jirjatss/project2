@@ -38,8 +38,8 @@ fieldset input {
   height: 2.2rem;
 }
 
-#submit input {
-  display: flex;
+#submit {
+  margin-left: 25%;
   justify-content: center;
   border-radius: 10px;
   border: none;
@@ -51,26 +51,21 @@ fieldset input {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   align-items: center;
 }
-#submit input:hover {
-  display: flex;
+#submit:hover {
   justify-content: center;
   border-radius: 10px;
   border: none;
   background-color: blue;
-  color: red;
-  width: 260px;
-  height: 2.4rem;
+  color: black;
+  width: 250px;
+  height: 2.2rem;
   font-size: medium;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   align-items: center;
 }
-span {
-  display: flex;
-  color: red;
-}
 
 .handle {
-  margin-left: 75px;
+  margin-left: 40.5%;
   text-align: center;
   border-radius: 5px;
   border: none;
@@ -83,12 +78,11 @@ span {
 }
 
 .handle:hover {
-  margin-left: 75px;
   text-align: center;
   border-radius: 5px;
   border: none;
   background-color: blue;
-  color: red;
+  color: black;
   width: 100px;
   height: 2.2rem;
   font-size: medium;
@@ -96,10 +90,20 @@ span {
 }
 
 #hasil {
-  display: flex;
+  margin-left: 3rem;
+  justify-content: center;
   text-align: center;
+  margin-right: 3rem;
+  margin-bottom: -1rem;
 }
 
 .hide {
   display: none;
+}
+
+#input {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  width: 525px;
 }

@@ -26,13 +26,13 @@ submit.addEventListener("click", function (event) {
     const BMI = (weight / ((height * height) / 10000)).toFixed(1);
 
     if (BMI <= 18.5) {
-      hasil.innerHTML = `Your BMI is ${BMI} which means you are Underweight`;
+      hasil.innerHTML = `Your BMI is ${BMI} which means you are <b>Underweight`;
     } else if (BMI > 18.5 && BMI < 25) {
-      hasil.innerHTML = `Your BMI is ${BMI} which means you are Normal`;
+      hasil.innerHTML = `Your BMI is ${BMI} which means you are <b>Normal`;
     } else if (BMI >= 25 && BMI < 30) {
-      hasil.innerHTML = `Your BMI is ${BMI} which means you are Overweight`;
+      hasil.innerHTML = `Your BMI is ${BMI} which means you are <b>Overweight`;
     } else {
-      hasil.innerHTML = `Your BMI is ${BMI} which means you are Obesity`;
+      hasil.innerHTML = `Your BMI is ${BMI} which means you are <b>Obesity`;
     }
   } else {
     hasil.style.color = "red";
